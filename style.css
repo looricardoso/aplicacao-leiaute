@@ -1,9 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
 .hg-conteudo {
-    background-color: silver;
+    background-color: #EED1CC;
 }
 
 .hg-conteudo > main {
-    background-color: #aaa;
+    background-color: #8F706C;
+
+    padding: 0 20px 0 20px;
 }
 
 body {
@@ -12,20 +21,28 @@ body {
     min-height: 100vh;
     display: flex;
     flex-flow: column;
+    font-family: 'Roboto', sans-serif;
 }
 
 .hg-conteudo {
     flex: 1;
     display: flex;
     flex-flow: column;
+
 }
 
 .hg-conteudo > nav {
     order: -1;
+
+    padding: 0 10px 0 10px;
 }
 
 .hg-conteudo > main {
     flex: 1;
+}
+
+.hg-conteudo > aside {
+    padding: 0 10px 0 10px;
 }
 
 @media (min-width: 768px) {
@@ -36,5 +53,99 @@ body {
     .hg-conteudo > aside,
     .hg-conteudo > nav {
         flex: 0 0 200px;
+    }
+}
+
+footer {
+    background-color: white;
+    text-align: center;
+    padding: 0 0 0 10px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.familia {
+    font-weight: bold;
+}
+
+p {
+    text-align: justify;
+}
+
+h2 {
+    background-color: #EED1CC;
+    padding: 0 0 0 10px;
+    border-radius: 10px;
+}
+
+.subtitulo {
+    background-color: #973937;
+    border-radius: 10px;
+    padding: 0 0 0 10px;
+    text-shadow: 2px 2px 2px #64514C;
+}
+
+.imagemvirus img {
+    max-width: 100px;
+}
+
+.texto {
+    padding: 10px;
+}
+
+.usemascara {
+    display: flex;
+}
+
+.planetademascara img {
+    max-width: 200px;
+}
+
+.alcoolemgel {
+    display: flex;
+}
+.alcoolnamao img {
+    max-width: 200px;
+}
+
+.laveasmaos{
+    display: flex;
+}
+.homemlavandoasmaos img {
+    max-width: 200px;
+}
+
+.eviteaglomeracoes {
+    display: flex;
+}
+.aglomeracoes img {
+    max-width: 200px;
+}
+
+.titulo {
+    animation: animacaotitulo 1s alternate infinite;
+}
+
+@keyframes animacaotitulo {
+    0% {
+        font-family: 'Ubuntu', sans-serif;
+    }
+    100% {
+        font-family: 'Ubuntu', sans-serif;
+        transform: perspective(500px) translateZ(50px);
     }
 }
